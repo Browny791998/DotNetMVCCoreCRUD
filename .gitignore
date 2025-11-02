@@ -1,0 +1,66 @@
+# This file specifies files and folders that Git should ignore when tracking changes.
+# It helps keep your repository clean and focused on source code.
+
+###########################
+## 1. Build and Binary Folders
+###########################
+
+# Exclude compiled output and object files
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+[Ll]ib/
+
+# Exclude package caches and intermediate files
+*.dll
+*.exe
+*.pdb
+*.suo
+*.sln.docstates
+*.user
+*.userprefs
+
+###########################
+## 2. Dependencies and Packages
+###########################
+
+# NuGet packages (Restore can recreate this)
+**/packages/*
+
+# Rider and Visual Studio caches and package folders
+.vs/
+.idea/
+.vscode/
+
+###########################
+## 3. Configuration and Secrets
+###########################
+
+# **CRITICAL: Exclude your local, private connection strings and secrets**
+# This ensures passwords and API keys are not accidentally committed.
+appsettings.Development.json
+appsettings.Staging.json
+appsettings.Production.json
+appsettings.Local.json
+*.localsettings
+*.bak
+
+###########################
+## 4. Test Results and Logs
+###########################
+
+# Test results and coverage files
+TestResults/
+*.trx
+*.coverage
+*.log
+[Ll]ogs/
+
+###########################
+## 5. macOS and OS Specific Files
+###########################
+
+# macOS system files
+.DS_Store
+.localized
